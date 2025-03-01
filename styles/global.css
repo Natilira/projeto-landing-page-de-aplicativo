@@ -81,6 +81,18 @@ a {
     color: inherit;
 }
 
+a:hover {
+    background: linear-gradient(
+        90deg,
+        var(--brand-color-secondary) 0%,
+        var(--brand-color-primary) 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+}
+
 /* obs role="list" no index.html para que o navegador saiba que é lista mesmo sem o pontinho*/
 ul[role="list"] {
     list-style: none;
